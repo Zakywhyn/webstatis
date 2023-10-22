@@ -1,0 +1,41 @@
+/* untuk mengatur semua keseluruhan body pada html*/
+body {
+    background-image: url(MPL.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* bagian yang mengatur warna background pada tulisan*/
+.container {
+    width: 900px;
+    margin: 20px auto;
+    background-color: beige;
+    border: 5px dotted rgb(255, 255, 255);
+}
+
+/*bagian untuk mengatur tulisan pada bagian judul pertama*/
+h1 {
+    background-color: black;
+    color: beige;
+    text-align: center;
+}
+
+/*bagian untuk mengatur tulisan pada bagian judul kedua dan ketiga*/
+h2 {
+    background-color: black;
+    color: beige;
+    text-align: center;
+}
+
+/*bagian untuk mengatur tulisan pada bagian judul isi websitenya*/
+p {
+    padding: 20px;
+    text-align: justify;
+    margin: 20px;
+}
+
+#pengantar {
+    background-color: beige;
+    text-align: 400px;
+}
