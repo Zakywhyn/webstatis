@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+  }
+  body {
+    background-image: url(image/Danau\ untuk\ tampilan\ awal.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    padding-top: 50px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* awal navbar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4%;
+    background-color: rgb(238, 119, 139);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+  }
+  
+  .Registration li {
+    color: black;
+    font-size: 45px;
+    list-style: none;
+    margin-right: 30rem;
+  }
+  /* akhir navbar */
+
+  /* awal registrasi */
+  .registrasi {
+    background-color: black;
+    width: 20rem;
+    height: 13rem;
+    margin-top: 10rem;
+    margin-left: 30rem;
+    margin-bottom: 1rem;
+    border: 1px solid white;
+    box-sizing: content-box;
+  }
+
+  .email {
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    padding-left: 46px;
+    padding-top: 20px;
+  }
+
+  .username {
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  .password {
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    padding-left: 24px;
+    padding-top: 20px;
+  }
+
+  label {
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  .button button {
+    width: 150px;
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  .button button p {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+  }
+  /* akhir registrasi */

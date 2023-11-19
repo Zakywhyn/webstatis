@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* bagian body */
+body{
+    background-color: rgb(103, 225, 230);
+}
+
+/* bagian edit navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem 4%;
+    background-color: rgb(238, 119, 139);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+.navbar .logo marquee {
+    padding-left: 120px;
+    font-size: 18px;
+    color: black;
+    width: 700px;
+    font-weight: 500;
+    margin-left: 50px;
+}
+.navbar .logo a{
+    margin-left: 2rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.navbar .logo img {
+    align-items: center;
+    justify-content: left;
+    width: 25px;
+    height: 35px;
+  }
+
+.navbar .navbar-nav a{
+    display: block;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 1rem;
+    color: black;
+    font-weight: 600;
+    font-size: 0.8;
+    text-decoration: none;
+}
+
+/* bagian warna pada navbar jika  di klik*/
+.navbar .navbar-nav a:hover{
+    color: aqua;
+}
+
+/* bagian home */
+.home {
+    background-image: url(image/Danau\ untuk\ tampilan\ awal.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+.home h1 {
+    padding-top: 18rem;
+    width: 100%;
+    color: black;
+    font-size: 100px;
+    text-align: center;
+}
+
+/* bagian about */
+.about {
+    padding-top: 12rem;
+    margin-right: 20%;
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.about h1 {
+    font-size: 50px;
+}
+
+.about p {
+    padding-top: 10px;
+    padding-right:50px;
+    padding-left: 50px;
+    justify-content: center;
+    text-align: justify;
+}
+
+/* bagian product */
+.product-content {
+    display: flex;
+    padding-bottom: 4%;
+}
+
+.product-content p {
+    width: 50%;
+    padding-top: 2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+.product h1 {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.product img {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+}
+
+/* bagian galery */
+.container {
+    background-color: black;
+}
+
+.galery {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+.galery h1 {
+    text-align: center;
+    padding-top: 2rem;
+    color: white;
+}
+  
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    padding-top: 2rem;
+}
+  
+/* Caption text foto */
+.text {
+    color: white;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+  /* animasi foto */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.footer {
+    background-color: rgb(60, 60, 160);
+    display: flex;
+    justify-content: first baseline;
+  }
+  .footer .pariwisata_indonesia p {
+    font-family: "Times New Roman", Times, serif;
+    padding-left: 50px;
+    padding-top: 8px;
+    font-size: 21px;
+    color: white;
+  }
+  
+  .footer .design p {
+    font-family: "Times New Roman", Times, serif;
+    padding-left: 50px;
+    padding-top: 10px;
+    font-size: 15px;
+    color: white;
+  }
+
+  .footer .credit p {
+    font-family: "Times New Roman", Times, serif;
+    padding-left: 50px;
+    padding-top: 8px;
+    font-size: 15px;
+    color: white;
+  }
+  /* end credit */
+
+  /* start sosmed */
+  .footer .contact {
+    padding-left: 800px;
+    padding-top: 10px;
+    padding-right: 20px;
+  }
+  .contact .ig {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: first baseline;
+  }
+  .contact .ig img {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .contact .ig a {
+    color: white;
+    font-size: 17px;
+    font-family: "Times New Roman", Times, serif;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+  .contact .email {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: first baseline;
+  }
+  .contact .email img {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .contact .email a {
+    color: white;
+    font-size: 17px;
+    font-family: "Times New Roman", Times, serif;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+  .contact .whatsapp {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: first baseline;
+  }
+  .contact .whatsapp .img {
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+  .contact .whatsapp a {
+    color: white;
+    font-size: 17px;
+    font-family: "Times New Roman", Times, serif;
+    padding-left: 0.2px;
+    padding-top: 5px;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+#menu{
+    display: none;
+}
+
+@media screen and (max-width: 2000px){
+    #menu{
+        display: inline-block;
+    }
+
+    .navbar{
+        padding: 1.8rem;
+    }
+
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: blanchedalmond;
+        width: 8rem;
+        height: 100vh;
+    }
+
+    .navbar .navbar-nav.active{
+        right: 0;
+        transition: 0.7s;
+        
+    }
+}
